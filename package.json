@@ -1,0 +1,20 @@
+{
+  "name": "esbuild-demo",
+  "version": "1.0.0",
+  "description": "demo esbuild",
+  "main": "out/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/shelljs": "^0.8.9",
+    "esbuild": "^0.12.19"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2",
+    "shelljs": "^0.8.4"
+  },
+  "scripts": {
+    "clean": "rimraf out",
+    "build": "yarn run clean && esbuild --bundle ./index.ts --outfile=out/index.js --platform=node",
+    "echo": "node out/index.js"
+  }
+}

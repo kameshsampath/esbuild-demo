@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es2019",
+		"outDir": "out",
+		"moduleResolution": "node",
+		"lib": [
+			"es2019"
+		],
+		"sourceMap": true,
+		"rootDir": ".",
+		"strict": false,
+		"noUnusedLocals": false,
+		"experimentalDecorators": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true
+	},
+	"exclude": [
+		"node_modules",
+		".vscode-test"
+	]
+}
